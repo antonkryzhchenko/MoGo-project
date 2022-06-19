@@ -1,0 +1,50 @@
+.futures {
+  padding: 0 15px;
+  background-color: var(--bg-color);
+}
+
+.futures__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 170px;
+}
+
+@media (max-width: 1200px) {
+  .futures__cards {
+    margin: 0;
+  }
+}
+
+.futures__card {
+  padding: 40px 10px;
+  text-align: center;
+  border-left: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+}
+
+.futures__number {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .futures__number {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+}
+
+.futures__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .futures__text {
+    font-weight: 500;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,56 @@
+.review-slide {
+  display: flex;
+  align-items: flex-start;
+
+  &__icon {
+    width: 170px;
+    flex-shrink: 0;
+    margin-right: 30px;
+
+    @media (max-width: 768px) {
+      width: 100px;
+    }
+
+    @media (max-width: 560px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--text-color);
+    font-style: italic;
+    margin-bottom: 26px;
+    line-height: 1.5;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+
+  &__author {
+    font-family: "Kaushan Script";
+    font-size: 30px;
+    color: #000;
+
+    @media (max-width: 1200px) {
+      font-size: 24px;
+    }
+  }
+
+  &__author::before {
+    content: "";
+    display: inline-block;
+    margin-right: 56px;
+    width: 70px;
+    height: 4px;
+    background: var(--accent-color);
+    vertical-align: middle;
+
+    @media (max-width: 1200px) {
+      width: 47px;
+      margin-right: 37px;
+    }
+  }
+}

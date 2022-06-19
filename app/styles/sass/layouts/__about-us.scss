@@ -1,0 +1,88 @@
+.about-us {
+  padding: 50px 0;
+}
+
+.about-us__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 58px;
+}
+
+.about-us__content {
+  position: relative;
+}
+
+.about-us__content-wrap {
+  position: relative;
+  padding-bottom: 90%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.about-us__content-pic {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us__content-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(237, 215, 137, 0.9) 0%,
+    rgba(233, 130, 131, 0.9) 100%
+  );
+  opacity: 0;
+}
+
+.about-us__content-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.about-us__content-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us__content-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us__content-text {
+  padding-top: 100px;
+  text-transform: uppercase;
+}
+
+.about-us__content:hover .about-us__content-block {
+  background: linear-gradient(
+    360deg,
+    rgba(237, 215, 137, 0.9) 0%,
+    rgba(233, 130, 131, 0.9) 100%
+  );
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  transition: 0.4s linear;
+  opacity: 1;
+}

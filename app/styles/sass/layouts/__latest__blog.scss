@@ -1,0 +1,20 @@
+.latest__blog {
+  background: url("../images/dist/latest_blog/bg_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.latest__blog-head {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.blog__title {
+  color: var(--accent-color);
+}
+
+@media (max-width: 1200px) {
+  .blog__title {
+    font-size: 24px;
+  }
+}

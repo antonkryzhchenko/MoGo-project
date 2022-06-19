@@ -1,0 +1,17 @@
+.burger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    width: 24px;
+    height: 20px;
+    padding: 0;
+    border: none;
+}
+
+.burger__line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+}

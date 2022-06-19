@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #2d3033;
+  --secondary-color: #ffffff;
+  --text-color: #a9afb1;
+  --bg-color: #95e1d3;
+  --accent-color: #f38281;
+  --content-width: 1170px;
+  --mobile-padding: 15px;
+  --gutter: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-display: unset;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

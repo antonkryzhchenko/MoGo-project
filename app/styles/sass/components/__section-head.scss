@@ -1,0 +1,52 @@
+.section-head {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-head__subtitle {
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--primary-color);
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .section-head__subtitle {
+    font-size: 24px;
+  }
+}
+
+.section-head__title {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .section-head__title {
+    font-size: 24px;
+  }
+}
+
+.section-head__title::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .section-head__title::after {
+    width: 148px;
+  }
+}

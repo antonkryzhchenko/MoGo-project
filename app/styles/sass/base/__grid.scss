@@ -1,0 +1,65 @@
+.container {
+  padding: 0 15px;
+  max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-11 {
+  width: calc(100% / 11 * 11 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12 - var(--gutter) * 2);
+  margin: 0 var(--gutter);
+}
