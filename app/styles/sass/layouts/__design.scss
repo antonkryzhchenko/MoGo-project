@@ -33,5 +33,12 @@
     position: absolute;
     right: -50px;
     bottom: -98px;
-    height: auto;
+    width: 30.35%;
+}
+
+@media (max-width: 560px) {
+    .design__phone-img {
+        position: absolute;
+        right: 50px;
+    }
 }

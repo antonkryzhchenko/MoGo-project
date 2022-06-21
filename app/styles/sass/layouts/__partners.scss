@@ -2,19 +2,19 @@
   padding: 50px 0px;
   background-color: #f8f8f8;
 }
-.partners_row {
+.partners__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .partners__img {
-  width: 80px;
-  height: 80px;
+  width: 127px;
+  height: 127px;
 }
 
-.partners__img_less {
-  width: 50px;
-  height: 50px;
+.partners__img_small {
+  width: 70px;
+  height: 70px;
   align-self: center;
 }

@@ -7,6 +7,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 - var(--gutter);
 }
 
 .col-2 {
@@ -55,11 +56,51 @@
 }
 
 .col-11 {
-  width: calc(100% / 11 * 11 - var(--gutter) * 2);
+  width: calc(100% / 12 * 11 - var(--gutter) * 2);
   margin: 0 var(--gutter);
 }
 
 .col-12 {
   width: calc(100% / 12 * 12 - var(--gutter) * 2);
   margin: 0 var(--gutter);
+}
+
+/* lg */
+@media (max-width: 1200px) {
+  .col-lg-6 {
+    margin: 0 var(--gutter);
+    width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  }
+}
+
+/* md */
+@media (max-width: 992px) {
+  .col-md-6 {
+    margin: 0 var(--gutter);
+    width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  }
+}
+
+/* sm */
+@media (max-width: 768px) {
+  .col-sm-6 {
+    margin: 0 var(--gutter);
+    width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  }
+  .col-sm-12 {
+    margin: 0 var(--gutter);
+    width: calc(100% / 12 * 12 - var(--gutter) * 2);
+  }
+}
+
+/* xs */
+@media (max-width: 560px) {
+  .col-xs-6 {
+    margin: 0 var(--gutter);
+    width: calc(100% / 12 * 6 - var(--gutter) * 2);
+  }
+  .col-xs-12 {
+    margin: 0 var(--gutter);
+    width: calc(12 / 12 * 100% - var(--gutter) * 2);
+  }
 }

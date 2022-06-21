@@ -15,11 +15,38 @@
   }
 }
 
+@media (max-width: 560px) {
+  .futures__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .future__card_sm {
+    width: 50%;
+  }
+
+  .future__card_sm-2 {
+    width: 50%;
+  }
+
+  .future__card_lg {
+    width: 100%;
+  }
+}
+
 .futures__card {
   padding: 40px 10px;
   text-align: center;
   border-left: 1px solid var(--secondary-color);
   border-right: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 560px) {
+  .futures__card {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--secondary-color);
+  }
 }
 
 .futures__number {
@@ -37,14 +64,11 @@
 }
 
 .futures__text {
-  font-weight: 700;
   font-size: 24px;
-  line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
   .futures__text {
-    font-weight: 500;
-    font-size: 28px;
+    font-size: 18px;
   }
 }

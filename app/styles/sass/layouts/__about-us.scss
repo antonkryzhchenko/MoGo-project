@@ -11,6 +11,12 @@
   padding-bottom: 58px;
 }
 
+@media (max-width: 1200px) {
+  .about-us__text {
+    font-size: 14px;
+  }
+}
+
 .about-us__content {
   position: relative;
 }
@@ -57,6 +63,8 @@
 
 .about-us__content-item {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -64,14 +72,39 @@
 
 .about-us__content-img {
   position: absolute;
+  width: 40px;
+  height: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1200px) {
+  .about-us__content-img {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__content-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .about-us__content-text {
-  padding-top: 100px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 199px;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .about-us__content-text {
+    font-size: 18px;
+    padding-top: 166px;
+  }
 }
 
 .about-us__content:hover .about-us__content-block {

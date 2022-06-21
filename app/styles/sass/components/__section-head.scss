@@ -50,3 +50,9 @@
     width: 148px;
   }
 }
+
+@media (max-width: 560px) {
+  .section-head__title::after {
+    width: 134px;
+  }
+}
