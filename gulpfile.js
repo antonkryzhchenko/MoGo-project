@@ -19,7 +19,7 @@ import lessglob      from 'gulp-less-glob'
 import styl          from 'gulp-stylus'
 import stylglob      from 'gulp-noop'
 import postCss       from 'gulp-postcss'
-import cssnano       from 'cssnano'
+import csso from 'gulp-csso'
 import autoprefixer  from 'autoprefixer'
 import imagemin      from 'gulp-imagemin'
 import changed       from 'gulp-changed'
@@ -86,8 +86,8 @@ function styles() {
 		.pipe(eval(preprocessor)({ 'include css': true }))
 		.pipe(postCss([
 			autoprefixer({ grid: 'autoplace' }),
-			cssnano({ preset: ['default', { discardComments: { removeAll: true } }] })
 		]))
+		.pipe(csso())
 		.pipe(concat('app.min.css'))
 		.pipe(dest('app/css'))
 		.pipe(browserSync.stream())

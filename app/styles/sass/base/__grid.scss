@@ -10,6 +10,13 @@
   margin: 0 - var(--gutter);
 }
 
+// Для автоматического расчета колонок
+// @for $value from 1 through 12 {
+//   .col-#{$value} {
+//     width: $width;
+//   }
+// }
+
 .col-2 {
   width: calc(100% / 12 * 2 - var(--gutter) * 2);
   margin: 0 var(--gutter);
