@@ -1,5 +1,6 @@
 .container {
-  padding: 0 15px;
+  padding-left: var(--mobile-padding);
+  padding-right: var(--mobile-padding);
   max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
   margin: 0 auto;
 }
@@ -7,7 +8,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 - var(--gutter);
+  margin: 0 calc(var(--gutter) * -1);
 }
 
 // Для автоматического расчета колонок

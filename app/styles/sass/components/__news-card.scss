@@ -18,6 +18,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1200px) {
+  .news-card__title {
+    font-size: 14px;
+  }
+}
+
 .news-card__title a {
   color: inherit;
   text-decoration: none;
@@ -26,4 +32,10 @@
 .news-card__date {
   font-weight: 400;
   font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+  .news-card__date {
+    font-size: 12px;
+  }
 }

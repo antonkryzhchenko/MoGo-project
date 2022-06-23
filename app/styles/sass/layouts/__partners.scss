@@ -9,12 +9,21 @@
 }
 
 .partners__img {
-  width: 127px;
-  height: 127px;
-}
-
-.partners__img_small {
   width: 70px;
   height: 70px;
   align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .partners__img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners__img {
+    width: 50px;
+    height: 50px;
+  }
 }
