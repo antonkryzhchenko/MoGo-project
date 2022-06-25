@@ -1,29 +1,26 @@
 .partners {
   padding: 50px 0px;
   background-color: #f8f8f8;
-}
-.partners__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.partners__img {
-  width: 70px;
-  height: 70px;
-  align-self: center;
-}
-
-@media (max-width: 1200px) {
-  .partners__img {
-    width: 65px;
-    height: 65px;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-}
 
-@media (max-width: 768px) {
-  .partners__img {
-    width: 50px;
-    height: 50px;
+  &__img {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+
+    @include breakpoint(xl) {
+      width: 65px;
+      height: 65px;
+    }
+
+    @include breakpoint(md) {
+      width: 50px;
+      height: 50px;
+    }
   }
 }

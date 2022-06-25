@@ -7,11 +7,11 @@
     flex-shrink: 0;
     margin-right: 30px;
 
-    @media (max-width: 768px) {
+    @include breakpoint(md) {
       width: 100px;
     }
 
-    @media (max-width: 560px) {
+    @include breakpoint(sm) {
       display: none;
     }
   }
@@ -24,7 +24,7 @@
     margin-bottom: 26px;
     line-height: 1.5;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       font-size: 18px;
     }
   }
@@ -34,7 +34,7 @@
     font-size: 30px;
     color: #000;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       font-size: 24px;
     }
   }
@@ -48,7 +48,7 @@
     background: var(--accent-color);
     vertical-align: middle;
 
-    @media (max-width: 1200px) {
+    @include breakpoint(xl) {
       width: 47px;
       margin-right: 37px;
     }

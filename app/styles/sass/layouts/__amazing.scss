@@ -1,99 +1,81 @@
 .amazing {
   padding-top: 50px;
-}
 
-@media (max-width: 1200px) {
-  .amazing {
+  @include breakpoint(xl) {
     padding-top: 58px;
   }
-}
 
-.amazing__card {
-  margin: 0 15px;
-  display: flex;
-  margin-bottom: 70px;
-  margin-top: 70px;
-}
+  &__card {
+    margin: 0 15px;
+    display: flex;
+    margin-bottom: 70px;
+    margin-top: 70px;
 
-@media (max-width: 1200px) {
-  .amazing__card {
-    margin-top: 0;
-    margin-bottom: 50px;
+    @include breakpoint(xl) {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    @include breakpoint(md) {
+      margin-top: 0;
+      margin-bottom: 42px;
+    }
   }
-}
 
-@media (max-width: 768px) {
-  .amazing__card {
-    margin-top: 0;
-    margin-bottom: 42px;
+  &__card-img {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    @include breakpoint(xl) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include breakpoint(md) {
+      width: 57px;
+      height: 57px;
+    }
   }
-}
 
-.amazing__card-img {
-  width: 70px;
-  height: 70px;
-  flex-shrink: 0;
-  align-self: flex-start;
-}
+  &__info {
+    margin-left: 30px;
 
-@media (max-width: 1200px) {
-  .amazing__card-img {
-    width: 60px;
-    height: 60px;
+    @include breakpoint(xl) {
+      margin-left: 28px;
+    }
+
+    @include breakpoint(md) {
+      margin-left: 20px;
+    }
   }
-}
 
-@media (max-width: 768px) {
-  .amazing__card-img {
-    width: 57px;
-    height: 57px;
+  &__card-name {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 15px 0;
+
+    @include breakpoint(xl) {
+      font-size: 18px;
+      padding: 13px 0;
+    }
   }
-}
 
-.amazing__info {
-  margin-left: 30px;
-}
-
-@media (max-width: 1200px) {
-  .amazing__info {
-    margin-left: 28px;
-  }
-}
-
-@media (max-width: 768px) {
-  .amazing__info {
-    margin-left: 20px;
-  }
-}
-
-.amazing__card-name {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  padding: 15px 0;
-}
-
-@media (max-width: 1200px) {
-  .amazing__card-name {
+  &__card-desc {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
-    padding: 13px 0;
-  }
-}
+    line-height: 1.2;
+    color: var(--primary-color);
 
-.amazing__card-desc {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  color: var(--primary-color);
-}
-
-@media (max-width: 1200px) {
-  .amazing__card-desc {
-    font-size: 14px;
+    @include breakpoint(xl) {
+      font-size: 14px;
+    }
   }
 }

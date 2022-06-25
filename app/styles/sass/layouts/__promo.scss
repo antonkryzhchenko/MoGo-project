@@ -12,147 +12,136 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center center;
   text-align: center;
-}
 
-@media (max-width: 1200px) {
-  .promo {
+  @include breakpoint(xl) {
     padding-top: 50px;
   }
-}
 
-.promo__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 9.5vw;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
+  &__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.5vw;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
 
-.promo__title::after {
-  content: "";
-  display: block;
-  width: 170px;
-  height: 4px;
-  background-color: var(--secondary-color);
-  margin: 0 auto;
-  margin-top: 30px;
-}
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 4px;
+      background-color: var(--secondary-color);
+      margin: 0 auto;
+      margin-top: 30px;
 
-@media (max-width: 1200px) {
-  .promo__title::after {
-    width: 115px;
+      @include breakpoint(xl) {
+        width: 115px;
+      }
+      @include breakpoint(sm) {
+        width: 134px;
+      }
+    }
   }
-}
 
-.promo__subtitle {
-  font-family: "Kaushan Script", cursive;
-  font-size: 4.5vw;
-  font-weight: 400;
-  margin-bottom: 30px;
-  padding-top: 50px;
-}
-
-.promo__link {
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 25px 60px;
-  border: 4px solid var(--secondary-color);
-  max-width: 370px;
-  display: inline-block;
-  transition: 0.5s;
-  margin: 116px 0;
-}
-
-.promo__link:hover {
-  background-color: var(--secondary-color);
-  color: #f4bf87;
-}
-
-.promo__navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.promo__text {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1200px) {
-  .promo__text {
-    font-size: 14px;
+  &__subtitle {
+    font-family: "Kaushan Script", cursive;
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-top: 50px;
   }
-}
 
-@media (max-width: 560px) {
-  .promo__text {
-    font-size: 0;
-  }
-}
-
-.promo__text::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 4px;
-  background-color: var(--secondary-color);
-  margin: 0 10px 30px 0;
-}
-
-@media (max-width: 1200px) {
-  .promo__text::before {
-    width: 233px;
-  }
-}
-
-@media (max-width: 992px) {
-  .promo__text::before {
-    width: 170px;
-  }
-}
-
-@media (max-width: 768px) {
-  .promo__text::before {
-    width: 120px;
-  }
-}
-
-@media (max-width: 560px) {
-  .promo__text::before {
-    width: 57px;
-  }
-}
-
-.promo__text span {
-  margin-right: 5px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-}
-
-@media (max-width: 1200px) {
-  .promo__text span {
+  &__link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px 60px;
+    border: 4px solid var(--secondary-color);
+    max-width: 370px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 116px;
   }
-}
 
-@media (max-width: 560px) {
-  .promo__text span {
-    font-size: 0;
+  .promo__link:hover {
+    background-color: var(--secondary-color);
+    color: #f4bf87;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 116px;
+  }
+
+  &__pagination li {
+    width: 22%;
+  }
+
+  &__pagination button {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 25px 0;
+    background: transparent;
+    border: none;
+    border-top: 4px solid #fff;
+    width: 100%;
+    color: #fff;
+    
+    @include breakpoint(lg) {
+        font-size: 24px;
+        padding: 18px 0;
+    }
+  
+    @include breakpoint(md) {
+        font-size: 18px;
+    }
+  
+    @include breakpoint(sm) {
+        font-size: 14px;
+    }
+    
+    :hover {
+      opacity: 0.8;
+    }
+    
+    &.is-active {
+      border-top: 4px solid var(--secondary-color);
+      animation-name: move;
+      animation-duration: 2s;
+      transition-duration: 2s;
+      animation-fill-mode: forwards;
+  
+      @keyframes move {
+        from {
+          border-top: 4px solid var(--secondary-color);
+        }
+        to {
+          border-top: 4px solid var(--accent-color);
+        }
+      }
+      @keyframes move {
+        0% {
+          border-top: 4px solid var(--secondary-color);
+        }
+        50% {
+          border-top: 4px solid #ff7f7c;
+        }
+        100% {
+          border-top: 4px solid var(--accent-color);
+        }
+      }
+    }
   }
 }

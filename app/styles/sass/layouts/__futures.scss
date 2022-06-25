@@ -1,74 +1,64 @@
 .futures {
   padding: 0 15px;
   background-color: var(--bg-color);
-}
 
-.futures__cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 0 170px;
-}
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 170px;
 
-@media (max-width: 1200px) {
-  .futures__cards {
-    margin: 0;
+    @include breakpoint(xl) {
+      margin: 0;
+    }
+
+    @include breakpoint(sm) {
+      display: flex;
+      flex-wrap: wrap;
+
+      .future__card_sm {
+        width: 50%;
+      }
+
+      .future__card_sm-2 {
+        width: 50%;
+      }
+
+      .future__card_lg {
+        width: 100%;
+      }
+    }
   }
-}
 
-@media (max-width: 560px) {
-  .futures__cards {
-    display: flex;
-    flex-wrap: wrap;
+  &__card {
+    padding: 40px 10px;
+    text-align: center;
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+
+    @include breakpoint(sm) {
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid var(--secondary-color);
+    }
   }
 
-  .future__card_sm {
-    width: 50%;
+  &__number {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+    @include breakpoint(xl) {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
   }
 
-  .future__card_sm-2 {
-    width: 50%;
-  }
+  &__text {
+    font-size: 24px;
 
-  .future__card_lg {
-    width: 100%;
-  }
-}
-
-.futures__card {
-  padding: 40px 10px;
-  text-align: center;
-  border-left: 1px solid var(--secondary-color);
-  border-right: 1px solid var(--secondary-color);
-}
-
-@media (max-width: 560px) {
-  .futures__card {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--secondary-color);
-  }
-}
-
-.futures__number {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 1200px) {
-  .futures__number {
-    font-size: 48px;
-    margin-bottom: 15px;
-  }
-}
-
-.futures__text {
-  font-size: 24px;
-}
-
-@media (max-width: 1200px) {
-  .futures__text {
-    font-size: 18px;
+    @include breakpoint(xl) {
+      font-size: 18px;
+    }
   }
 }

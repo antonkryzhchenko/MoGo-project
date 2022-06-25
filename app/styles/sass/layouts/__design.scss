@@ -1,14 +1,13 @@
 .design {
-    position: relative;
-    padding-top: 42px;
-    padding-bottom: 57px;
-    background: url('../images/dist/design/bg-design.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 57px;
+  background: url("../images/dist/design/bg-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-.design::before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -17,28 +16,27 @@
     bottom: 0;
     background: rgba(255, 255, 255, 0.8);
     z-index: 0;
-}
+  }
 
-.design__head {
+  &__head {
     position: relative;
-}
+  }
 
-.design__images-wrap {
+  &__images-wrap {
     position: relative;
     margin: 0 auto;
     max-width: 660px;
-}
+  }
 
-.design__phone-img {
+  &__phone-img {
     position: absolute;
     right: -50px;
     bottom: -98px;
     width: 30.35%;
-}
 
-@media (max-width: 560px) {
-    .design__phone-img {
-        position: absolute;
-        right: 40px;
+    @include breakpoint(sm) {
+      position: absolute;
+      right: 40px;
     }
+  }
 }

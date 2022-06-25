@@ -6,131 +6,120 @@
   padding-top: 40px;
   padding-bottom: 40px;
   z-index: 999;
-}
 
-.header_has-bg {
-  background: var(--accent-color);
-}
+  &_has-bg {
+    background: var(--accent-color);
+  }
 
-.header__inner {
-  display: flex;
-  align-items: center;
-}
-
-
-.header__logo-link {
-  z-index: 1;
-}
-
-.header__burger {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .header__burger {
+  &__inner {
     display: flex;
-    margin-left: auto;
-  }
-}
-
-.header__nav {
-  margin-left: auto;
-}
-
-@media (max-width: 768px) {
-  .header__nav {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__nav_opened {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(
-        360deg,
-        rgba(237, 215, 137, 0.9) 0%,
-        rgba(233, 130, 131, 0.9) 100%
-      ),
-      url("../images/dist/promobg.jpg");
-    background-size: cover, cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center center;
-  }
-}
-
-.header__buy {
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .header__buy {
-    display: none;
-  }
-}
-
-.header__buy-img {
-  width: 20px;
-  height: 20px;
-  margin-right: 40px;
-}
-
-.header__buy-img:last-child {
-  margin-right: 0;
-}
-
-.header__menu {
-  display: flex;
-  list-style: none;
-}
-
-@media (max-width: 768px) {
-  .header__menu {
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
   }
-}
 
-.header__menu-item {
-  margin-right: 40px;
-}
-
-@media (max-width: 768px) {
-  .header__menu-item {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  &__logo-link {
+    z-index: 1;
   }
-}
 
-.header__menu-item_active .header__menu-link {
-  color: #f4bf87;
-  position: relative;
-}
+  &__burger {
+    display: none;
 
-.header__menu-item_active .header__menu-link::after {
-  content: "";
-  position: absolute;
-  background: #f4bf87;
-  width: 150%;
-  height: 3px;
-  bottom: -5px;
-  left: 50%;
-  transform: translatex(-50%);
-}
+    @include breakpoint(md) {
+      display: flex;
+      margin-left: auto;
+    }
+  }
 
-.header__menu-link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--secondary-color);
-  transition: all 0.5s ease 0s;
-}
+  &__nav {
+    margin-left: auto;
 
-.header__menu-link:hover {
-  color: #f4bf87;
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    @include breakpoint(md) {
+      &_opened {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(
+            360deg,
+            rgba(237, 215, 137, 0.9) 0%,
+            rgba(233, 130, 131, 0.9) 100%
+          ),
+          url("../images/dist/promobg.jpg");
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+
+  &__buy {
+    display: flex;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &__buy-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+  }
+
+  &__buy-img:last-child {
+    margin-right: 0;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+
+    @include breakpoint(md) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+
+  &__menu-item {
+    margin-right: 40px;
+
+    @include breakpoint(md) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &__menu-item_active .header__menu-link {
+    color: #f4bf87;
+    position: relative;
+  }
+
+  &__menu-item_active .header__menu-link::after {
+    content: "";
+    position: absolute;
+    background: #f4bf87;
+    width: 150%;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  &__menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 0.5s ease 0s;
+  }
+
+  &__menu-link:hover {
+    color: #f4bf87;
+  }
 }

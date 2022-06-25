@@ -1,0 +1,17 @@
+.prime-btn {
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 11px 25px 11px 25px;
+
+  @include breakpoint(xl) {
+    padding: 12px 15px 12px 15px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background: #41b49f;
+  }
+}

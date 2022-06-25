@@ -2,11 +2,11 @@
   position: relative;
   padding: 0 87px;
 
-  @media (max-width: 768px) {
+  @include breakpoint(md) {
     padding: 0 50px;
   }
 
-  @media (max-width: 560px) {
+  @include breakpoint(sm) {
     padding: 0;
   }
 
