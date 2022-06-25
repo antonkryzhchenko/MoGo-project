@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -12,17 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;700;800&display=swap"
     rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./images/dist/favicon.png">
-    <link rel="stylesheet" href="./css/app.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/app.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/app.min.js"></script>
     <title>Welcome to MOGO</title>
   </head>
 
@@ -69,14 +68,31 @@
     <!-- Promo Start-->
   <section class="promo">
     <div class="container">
-      <p class="promo__subtitle">Creative Template</p>
-      <h1 class="promo__title" data-aos="fade-up">Welcome</br>to MoGo</h1>
-      <a class="promo__link" href="#!">learn more</a>
-      <div class="promo__navigation">
-        <p class="promo__text"><span>01</span>intro</p>
-        <p class="promo__text"><span>02</span>work</p>
-        <p class="promo__text"><span>03</span>about</p>
-        <p class="promo__text"><span>04</span>contacts</p>
+      <div class="splide promo__slider" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide promo__slide" data-slide-title="01 intro">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title" data-aos="fade-up">Welcome</br>to MoGo</h1>
+              <a class="promo__link" href="#!">learn more</a>
+            </li>
+            <li class="splide__slide promo__slide" data-slide-title="02 work">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title" data-aos="fade-up">Look our</br>work</h1>
+              <a class="promo__link" href="#!">learn more</a>
+            </li>
+            <li class="splide__slide promo__slide" data-slide-title="03 about">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title" data-aos="fade-up">About</br>us</h1>
+              <a class="promo__link" href="#!">learn more</a>
+            </li>
+            <li class="splide__slide promo__slide" data-slide-title="04 contacts">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title" data-aos="fade-up">Our</br>contacts</h1>
+              <a class="promo__link" href="#!">learn more</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -93,7 +109,7 @@
         lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue
         sit fermentum risus feugiat.</h2>
       <div class="row">
-        <div class="about-us__cards col-4 col-md-6 col-xs-12">
+        <div class="about-us__cards col-4 col-md-6 col-sm-12">
           <div class="about-us__content">
             <div class="about-us__content-wrap">
               <img class="about-us__content-pic" src="./images/dist/about_us/about-us_01.jpg" alt="bg_icon">
@@ -108,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="about-us__cards col-4 col-md-6 col-xs-12">
+        <div class="about-us__cards col-4 col-md-6 col-sm-12">
           <div class="about-us__content">
             <div class="about-us__content-wrap">
               <img class="about-us__content-pic" src="./images/dist/about_us/about-us_02.jpg" alt="bg_icon">
@@ -123,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div class="about-us__cards col-4 col-md-6 col-xs-12">
+        <div class="about-us__cards col-4 col-md-6 col-sm-12">
           <div class="about-us__content">
             <div class="about-us__content-wrap">
               <img class="about-us__content-pic" src="./images/dist/about_us/about-us_03.jpg" alt="bg_icon">
@@ -178,42 +194,42 @@
         <h2 class="section-head__title">amazing services</h2>
       </div>
       <div class="row">
-        <div class="amazing__card col-4 col-lg-6 col-sm-12 col-xs-12">
+        <div class="amazing__card col-4 col-xl-6 col-md-12 col-sm-12">
           <img class="amazing__card-img" src="./images/dist/amazing/mushroom.svg" alt="mushroom">
           <div class="amazing__info">
             <p class="amazing__card-name">photography</p>
             <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="amazing__card col-4 col-lg-6 col-sm-12 col-xs-12">
+        <div class="amazing__card col-4 col-xl-6 col-md-12 col-sm-12">
           <img class="amazing__card-img" src="./images/dist/amazing/square.svg" alt="square">
           <div class="amazing__info">
             <p class="amazing__card-name">web design</p>
             <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="amazing__card col-4 col-lg-6 col-sm-12 col-xs-12">
+        <div class="amazing__card col-4 col-xl-6 col-md-12 col-sm-12">
           <img class="amazing__card-img" src="./images/dist/amazing/knife.svg" alt="knife">
           <div class="amazing__info">
             <p class="amazing__card-name">creativity</p>
             <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="amazing__card col-4 col-lg-6 col-sm-12 col-xs-12">
+        <div class="amazing__card col-4 col-xl-6 col-md-12 col-sm-12">
           <img class="amazing__card-img" src="./images/dist/amazing/book.svg" alt="book">
           <div class="amazing__info">
             <p class="amazing__card-name">seo</p>
             <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="amazing__card col-4 col-lg-6 col-sm-12 col-xs-12">
+        <div class="amazing__card col-4 col-xl-6 col-md-12 col-sm-12">
           <img class="amazing__card-img" src="./images/dist/amazing/pic.svg" alt="pic">
           <div class="amazing__info">
             <p class="amazing__card-name">css/html</p>
             <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div class="amazing__card col-4 col-lg-6 col-sm-12 col-xs-12">
+        <div class="amazing__card col-4 col-xl-6 col-md-12 col-sm-12">
           <img class="amazing__card-img" src="./images/dist/amazing/target.svg" alt="target">
           <div class="amazing__info">
             <p class="amazing__card-name">digital</p>
@@ -241,7 +257,7 @@
   <!-- Design End -->
 
   <!-- Services Start -->
-  <section class="service">
+  <!-- <section class="service">
 		<div class="container">
 			<div class="section-head">
 				<p class="section-head__subtitle">Service</p>
@@ -256,35 +272,48 @@
         <div class="service__content">
           <div class="service__card col-6 col-sm-12 col-xs-12">
 					<img src="./images/dist/service/man.jpg" alt="man" class="service__card-img">
-				</div>
-				<div class="service__card col-6 col-sm-12 col-xs-12">
-					<div class="service__card-content">
-						<div class="service__card-block service__card-block_text">
-							<img src="./images/dist/service/human-icon.svg" alt="human-icon" class="service__card-pic">
-							<p class="service__card-title">photography</p>
-							<div class="service__card-arrow"><img src="./images/dist/service/arrow_down.svg" alt="arrow"></div>
-						</div>
-						<p class="service__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.</p>
-					</div>
-					<div class="service__card-content">
-						<div class="service__card-block">
-							<img src="./images/dist/service/circle-icon.svg" alt="circle-icon" class="service__card-pic">
-							<p class="service__card-title">creativity</p>
-							<div class="service__card-arrow"><img src="./images/dist/service/arrow_down.svg" alt="arrow"></div>
-						</div>
-					</div>
-					<div class="service__card-content">
-						<div class="service__card-block">
-							<img src="./images/dist/service/gear-icon.svg" alt="gear-icon" class="service__card-pic">
-							<p class="service__card-title">web design</p>
-							<div class="service__card-arrow"><img src="./images/dist/service/arrow_down.svg" alt="arrow"></div>
-						</div>
-					</div>
-				</div>
+				  </div>
+          <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                Заголовок 1
+              </div>
+              <div class="accordion__body">
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequuntur autem, mollitia rem aperiam
+                  fugit eos officia vel quidem quis officiis dolores porro beatae veritatis tenetur. Culpa ex libero a!
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                Заголовок 2
+              </div>
+              <div class="accordion__body">
+                <div class="accordion__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos a autem perspiciatis sit eum
+                  exercitationem expedita omnis ipsam voluptate veritatis dolores similique eligendi, earum quasi officia in
+                  facilis dolorum!
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                Заголовок 3
+              </div>
+              <div class="accordion__body">
+                <div class="accordion__content">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta pariatur dolore consectetur perferendis libero
+                  nam sit magni voluptatibus voluptates autem nesciunt, praesentium quidem deserunt ipsa totam esse ullam? Quod,
+                  maiores!
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 			</div>
 		</div>
-  </section>
+  </section> -->
   <!-- Services End -->
 
   <!-- Reviews Start -->
@@ -334,7 +363,7 @@
       congue
       sit fermentum risus feugiat.</h2>
     <div class="row">
-      <div class="team__card col-4 col-lg-6 col-xs-12">
+      <div class="team__card col-4 col-xl-6 col-md-6 col-sm-12">
         <div class="team__content">
           <div class="team__content-wrap">
             <img class="team__content-pic" src="./images/dist/team/kadin.jpg" alt="kadin">
@@ -365,7 +394,7 @@
           <p class="team__author-position">founder, ceo</p>
         </div>
       </div>
-      <div class="team__card col-4 col-lg-6 col-xs-12">
+      <div class="team__card col-4 col-xl-6 col-md-6 col-sm-12">
         <div class="team__content">
           <div class="team__content-wrap">
             <img class="team__content-pic" src="./images/dist/team/zain.jpg" alt="zain">
@@ -396,7 +425,7 @@
           <p class="team__author-position">designer</p>
         </div>
       </div>
-      <div class="team__card col-4 col-lg-6 col-xs-12">
+      <div class="team__card col-4 col-xl-6 col-md-6 col-sm-12">
         <div class="team__content">
           <div class="team__content-wrap">
             <img class="team__content-pic" src="./images/dist/team/charlie.jpg" alt="charlie">
@@ -559,7 +588,7 @@
         <h2 class="section-head__title">what people say</h2>
       </div>
       <div class="row">
-        <div class="comments__card col-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="comments__card col-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
           <div class="comments__author-image">
             <img class="comments__card-icon" src="./images/dist/comments/PhillipCulhane.png" alt="PhillipCulhane">
           </div>
@@ -571,7 +600,7 @@
             </p>
           </div>
         </div>
-        <div class="comments__card col-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="comments__card col-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
           <div class="comments__author-image">
             <img class="comments__card-icon" src="./images/dist/comments/PaitynPress.png" alt="PaitynPress">
           </div>
@@ -583,7 +612,7 @@
             </p>
           </div>
         </div>
-        <div class="comments__card col-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="comments__card col-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
           <div class="comments__author-image">
             <img class="comments__card-icon" src="./images/dist/comments/DulceGouse.png" alt="DulceGouse">
           </div>
@@ -595,7 +624,7 @@
             </p>
           </div>
         </div>
-        <div class="comments__card col-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="comments__card col-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
           <div class="comments__author-image">
             <img class="comments__card-icon" src="./images/dist/comments/ZaireSchleifer.png" alt="ZaireSchleifer">
           </div>
@@ -620,7 +649,7 @@
       <h2 class="section-head__title">Latest blog</h2>
     </div>
     <div class="row">
-      <div class="blog__card col-4 col-md-6 col-xs-12">
+      <div class="blog__card col-4 col-md-6 col-sm-12">
         <div class="blog__card-head">
           <div class="blog__img-wrap">
             <img class="blog__img" src="./images/dist/blog/blog_pic01.jpg" alt="blog">
@@ -636,7 +665,7 @@
           <div class="blog__comments blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/comment.svg">17</div>
         </div>
       </div>
-      <div class="blog__card col-4 col-md-6 col-xs-12">
+      <div class="blog__card col-4 col-md-6 col-sm-12">
         <div class="blog__card-head">
           <div class="blog__img-wrap">
             <img src="./images/dist/blog/blog_pic01.jpg" alt="blog" class="blog__img">
@@ -652,7 +681,7 @@
           <div class="blog__comments blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/comment.svg">17</div>
         </div>
       </div>
-      <div class="blog__card col-4 col-md-6 col-xs-12">
+      <div class="blog__card col-4 col-md-6 col-sm-12">
         <div class="blog__card-head">
           <div class="blog__img-wrap">
             <img src="./images/dist/blog/blog_pic01.jpg" alt="blog" class="blog__img">
@@ -676,7 +705,7 @@
   <!-- Latest Blog Start -->
   <section class="latest__blog">
   <div class="section-head latest__blog-head">
-    <p class="section-head__subtitle"><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <p class="section-head__subtitle"><svg class="latest__blog-img" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M14.7864 14.2245C14.0212 14.2245 13.2732 13.9976 12.637 13.5724C12.0007 13.1473 11.5049 12.5431 11.212 11.8362C10.9192 11.1292 10.8426 10.3513 10.9919 9.60087C11.1412 8.85039 11.5096 8.16103 12.0507 7.61997C12.5918 7.07891 13.2811 6.71044 14.0316 6.56116C14.7821 6.41188 15.56 6.48849 16.2669 6.78131C16.9738 7.07414 17.5781 7.57001 18.0032 8.20624C18.4283 8.84246 18.6552 9.59046 18.6552 10.3556C18.6552 11.3817 18.2476 12.3658 17.522 13.0913C16.7965 13.8169 15.8124 14.2245 14.7864 14.2245ZM14.7864 7.67357C14.2559 7.67357 13.7374 7.83087 13.2963 8.12558C12.8552 8.42029 12.5115 8.83917 12.3085 9.32926C12.1055 9.81934 12.0523 10.3586 12.1558 10.8789C12.2593 11.3992 12.5148 11.8771 12.8899 12.2521C13.265 12.6272 13.7428 12.8827 14.2631 12.9862C14.7834 13.0897 15.3227 13.0365 15.8127 12.8335C16.3028 12.6305 16.7217 12.2868 17.0164 11.8457C17.3111 11.4047 17.4684 10.8861 17.4684 10.3556C17.4684 9.64431 17.1859 8.96212 16.6829 8.45913C16.1799 7.95615 15.4977 7.67357 14.7864 7.67357Z"
           fill="#F38281" />
@@ -690,7 +719,7 @@
           d="M15 26.2941C14.9222 26.295 14.845 26.2797 14.7735 26.249C14.7019 26.2184 14.6376 26.1731 14.5846 26.1161C14.5279 26.0628 14.4826 25.9984 14.4517 25.927C14.4208 25.8556 14.4048 25.7785 14.4048 25.7007C14.4048 25.6228 14.4208 25.5458 14.4517 25.4744C14.4826 25.4029 14.5279 25.3386 14.5846 25.2853C20.5184 19.3516 21.005 10.4153 21.0168 10.3322C21.0127 10.2522 21.0262 10.1722 21.0564 10.0979C21.0866 10.0236 21.1328 9.95696 21.1917 9.90259C21.2506 9.84821 21.3208 9.80747 21.3972 9.78327C21.4737 9.75908 21.5545 9.75201 21.634 9.76257C21.7903 9.77175 21.937 9.84117 22.0432 9.95625C22.1495 10.0713 22.2069 10.2231 22.2036 10.3797C22.2036 10.7594 21.7052 19.8737 15.4154 26.1161C15.3624 26.1731 15.298 26.2184 15.2265 26.249C15.155 26.2797 15.0778 26.295 15 26.2941Z"
           fill="#F38281" />
       </svg></p>
-    <h2 class="section-head__title blog__title">Latest blog</h2>
+    <h2 class="section-head__title latest__blog-title">Latest blog</h2>
   </div>
   </section>
   <!-- Latest Blog End -->
@@ -699,15 +728,15 @@
 <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="footer__col col-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="footer__col col-4 col-lg-6 col-md-12 col-sm-12">
 				<a href="#!" class="footer__logo-link"><img src="./images/dist/footer/logo.svg" alt="logo" class="footer__logo"></a>
-          		<p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+        <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
 				<div class="footer__media">
 					<div class="footer__followers-count"><span class="footer__followers-number">15</span><span class="footer__follower-letter">k</span><span class="footer__followers-text">followers</span>
-            		</div>
-          		</div>
+            </div>
+        </div>
 				<div class="footer__socials">
-            		<span class="footer__media-cta">Foolow us</span>
+          <span class="footer__media-cta">Foolow us</span>
             <ul class="footer__social-list">
               <li class="footer__social-item">
                 <a href="#!" class="footer__social-link">
@@ -757,7 +786,7 @@
             <input type="submit" value="SUBSCRIBE" class="prime-btn footer__subscribe-btn">
           </form>
         </div>
-        <div class="footer__col col-5 col-md-6 col-sm-12 col-xs-12">
+        <div class="footer__col col-5 col-lg-6 col-md-12 col-sm-12">
           <p class="footer__col-title">blogs</p>
           <div class="footer__news">
             <div class="news-card footer__news-card">
@@ -783,7 +812,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__col col-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="footer__col col-3 col-lg-6 col-md-12 col-sm-12">
           <p class="footer__col-title">Instagram</p>
           <div class="footer__inst-list">
             <div class="image-gallery">
@@ -822,5 +851,11 @@
       <p class="footer__copyright">Copyright © 2021 mogo. All Rights Reserved</p>
     </div>
 </footer>
+<!-- <script>
+  new ItcAccordion(document.querySelector('.accordion'), {
+    alwaysOpen: true
+  });
+</script> -->
+<script src="./js/app.min.js"></script>
 </body>
 </html>
