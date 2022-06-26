@@ -101,12 +101,12 @@ class ItcAccordion {
   }
   addEventListener() {
     this._el.addEventListener("click", (e) => {
-      const elHeader = e.target.closest(".accordion__header");
+      const elHeader = e.target.closest(".service__accordion-header");
       if (!elHeader) {
         return;
       }
       if (!this._config.alwaysOpen) {
-        const elOpenItem = this._el.querySelector(".accordion__item_show");
+        const elOpenItem = this._el.querySelector(".service__accordion-item_show");
         if (elOpenItem) {
           elOpenItem !== elHeader.parentElement
             ? this.toggle(elOpenItem)
@@ -117,10 +117,10 @@ class ItcAccordion {
     });
   }
   show(el) {
-    const elBody = el.querySelector(".accordion__body");
+    const elBody = el.querySelector(".service__accordion-body");
     if (
       elBody.classList.contains("collapsing") ||
-      el.classList.contains("accordion__item_show")
+      el.classList.contains("service__accordion-item_show")
     ) {
       return;
     }
@@ -135,9 +135,9 @@ class ItcAccordion {
     elBody.style["height"] = `${height}px`;
     window.setTimeout(() => {
       elBody.classList.remove("collapsing");
-      el.classList.remove("accordion__item_slidedown");
+      el.classList.remove("service__accordion-item_slidedown");
       elBody.classList.add("collapse");
-      el.classList.add("accordion__item_show");
+      el.classList.add("service__accordion-item_show");
       elBody.style["display"] = "";
       elBody.style["height"] = "";
       elBody.style["transition"] = "";
@@ -145,10 +145,10 @@ class ItcAccordion {
     }, this._config.duration);
   }
   hide(el) {
-    const elBody = el.querySelector(".accordion__body");
+    const elBody = el.querySelector(".service__accordion-body");
     if (
       elBody.classList.contains("collapsing") ||
-      !el.classList.contains("accordion__item_show")
+      !el.classList.contains("service__accordion-item_show")
     ) {
       return;
     }
@@ -159,7 +159,7 @@ class ItcAccordion {
     elBody.style["overflow"] = "hidden";
     elBody.style["transition"] = `height ${this._config.duration}ms ease`;
     elBody.classList.remove("collapse");
-    el.classList.remove("accordion__item_show");
+    el.classList.remove("service__accordion-item_show");
     elBody.classList.add("collapsing");
     window.setTimeout(() => {
       elBody.classList.remove("collapsing");
@@ -171,8 +171,12 @@ class ItcAccordion {
     }, this._config.duration);
   }
   toggle(el) {
-    el.classList.contains("accordion__item_show")
+    el.classList.contains("service__accordion-item_show")
       ? this.hide(el)
       : this.show(el);
   }
 }
+
+new ItcAccordion(document.querySelector('.service__accordion'), {
+  alwaysOpen: true
+});

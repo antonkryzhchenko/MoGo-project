@@ -1,80 +1,119 @@
 .service {
   padding: 50px 0px 114px 0px;
-}
 
-.service__text {
+  &__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
     color: var(--primary-color);
     text-align: center;
     padding-bottom: 58px;
-}
+  }
 
-.service__content {
+  &__content {
     display: flex;
     flex-wrap: wrap;
-}
-
-@include breakpoint(md) {
-  .service__card-img {
-    margin-bottom: 30px;
   }
-}
 
-.accordion__item {
-  margin-bottom: 0.5rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
-}
+  @include breakpoint(md) {
+    .service__card-img {
+      margin-bottom: 30px;
+    }
+  }
 
-.accordion__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  color: #fff;
-  font-weight: 500;
-  background-color: #0d6efd;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease-out;
-}
+  // Accordion
 
-.accordion__header::after {
-  flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-left: auto;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-size: 1.25rem;
-  content: "";
-  transition: transform 0.2s ease-out;
-}
+  &__accordion-item {
+    margin-bottom: 22px;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+  }
 
-.accordion__item_show .accordion__header::after,
-.accordion__item_slidedown .accordion__header::after {
-  transform: rotate(-180deg);
-}
+  &__accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 18px;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #c6cbcd;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
 
-.accordion__header:hover {
-  background-color: #0b5ed7;
-}
+    @include breakpoint(xl) {
+      padding: 20px 18px;
+    }
+  }
 
-.accordion__item:not(.accordion__item_show) .accordion__header {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
+  &__accordion-header::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    color: #c6cbcd;
+    background-image: url("../images/dist/service/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    content: "";
+    transition: transform 0.2s ease-out;
+  }
 
-.accordion__content {
-  padding: 0.75rem 1rem;
-  background: #fff;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
+  &__accordion-header-img {
+    width: 42px;
+    height: 42px;
 
-.accordion__item:not(.accordion__item_show) .accordion__body {
-  display: none;
+    @include breakpoint(xl) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__accordion-header-text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-left: 40px;
+
+    @include breakpoint(xl) {
+      font-size: 18px;
+      margin-left: 30px;
+    }
+  }
+
+  .service__accordion-item_show .service__accordion-header::after,
+  .service__accordion-item_slidedown .service__accordion-header::after {
+    transform: rotate(-180deg);
+  }
+
+  &__accordion-header:hover {
+    background-color: #eaeff1;
+  }
+
+  .service__accordion-content {
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border: 1px solid #c6cbcd;
+    max-height: 155px;
+    overflow-y: scroll;
+  }
+
+  &__accordion-content::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &__accordion-content::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+  &__accordion-content::-webkit-scrollbar-thumb {
+    background: #95e1d3;
+  }
+
+  .service__accordion-item:not(.service__accordion-item_show)
+    .service__accordion-body {
+    display: none;
+  }
 }
